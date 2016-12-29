@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="rs.js"></script>
+    <script data-require="jqueryui@*" data-semver="1.10.0"
+            src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/jquery-ui.js"></script>
+    <script src="fullscreen.js"></script>
+    <script src="mycontroller.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/theme-core.css">
+</head>
+<body ng-app="thisApp"ng-controller="myController">
+<div fullscreen-block >
+<div class="container" >
+        <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-md-10 col-sm-10 col-xs-10">
+                    <formator question="questionText"></formator>
+                </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <span class="pull-right" name="fullscreen" ng-click="fullscreenMode($event)" tooltip="Expand" style="cursor: pointer;font-size:14px;color:#1b93f3"><i class="fa fa-arrows-alt"></i></span>
+                </div>
+    </div>
+        </div>
+    </div>
+</div>
+    </div>
+<style>
+    .expand {
+        width: 100%;
+    }
+    .my-modal{
+        overflow: auto;
+        position: fixed;
+        top: 40px;
+        right: 30vw;
+        bottom: 40px;
+        left: 30vw;
+        z-index: 1040;
+    }
+
+</style>
+</body>
+</html>
