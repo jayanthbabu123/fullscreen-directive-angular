@@ -9,6 +9,7 @@ thisApp.directive('fullscreenBlock', ['$compile', function ($compile) {
     var jqLite = angular.element;
 
 
+
     var link = function (scope, element, attrs) {
         // Compiles DEFAULT icon button for opening the fullscreen mode.
         // fullscreenButton can be overridden by passing html code as a value of `fullscreen-block` attribute.

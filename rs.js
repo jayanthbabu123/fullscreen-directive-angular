@@ -20,6 +20,7 @@
      * value of bar. The object is not restricted in the number of arguments it can
      * take.
      *
+     *
      * If fewer arguments are specified than necessary for interpolation, the extra
      * interpolation markers will be preserved in the final string.
      *

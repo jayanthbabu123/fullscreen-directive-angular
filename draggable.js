@@ -13,6 +13,7 @@ angular.module('draggableModule', []).
                     startY = elm.prop('offsetTop');
                     initialMouseX = $event.clientX;
                     initialMouseY = $event.clientY;
+
                     $document.bind('mousemove', mousemove);
                     $document.bind('mouseup', mouseup);
                     return false;
